@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThesisAssist — 留学生学术辅导</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="site-logo">ThesisAssist</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">首页</a>
+        <a href="services.html">服务</a>
+        <a href="#" id="price-btn">价格</a>
+        <a href="faq.html">常见问题</a>
+        <a href="contact.html">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner" aria-label="首页横幅">
+    <div class="wrap">
+      <h1>留学生学术论文定制写作综合解决方案</h1>
+      <p>自 2018 年起，我们始终专注于为留学生群体提供高质量学术支持服务，累计已为数千名学子提供近万次专业服务。</p>
+      <div style="margin-top:18px;">
+        <a class="btn-primary" href="services.html">了解服务</a>
+        <button class="btn-ghost" onclick="document.querySelector('[id=price-btn]').click();" style="margin-left:12px;">查看价格</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section>
+      <h2 style="text-align:center;color:#0b78d1;">留学生学术论文定制写作综合解决方案</h2>
+      <p style="max-width:900px;margin:8px auto;color:#475569;text-align:justify;">
+        自 2018 年起，我们始终专注于为留学生群体提供高质量学术支持服务，累计已为数千名学子提供近万次专业服务，
+        涵盖 <strong>ESSAY 代写、网课作业、论文润色、文书精修、学术翻译</strong> 五大核心领域。
+        我们坚持以学生需求为核心，在服务质量上严格把控：论文润色环节提供 <em>“改到满意为止”</em> 的保障，
+        若最终仍未达到预期，承诺全额退款，以切实行动守护学生权益；同时，针对学术诚信关键环节，
+        我们建立了严格的 AI 检测与查重审查机制，通过多重技术核验，从源头规避学术不端风险，助力学生在合规前提下提升学术成果质量。
+        凭借专业的服务能力与负责任的态度，我们收获了学生的广泛认可，客户满意度保持 100%。
+      </p>
+    </section>
+
+    <section class="services-preview">
+      <h2 style="color:#0b78d1;text-align:center;">五大核心服务</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>Essay 代写</h3>
+          <p>根据要求提供原创、高质量论文，严格保证学术诚信。</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+          <h3>网课作业</h3>
+          <p>高质量，安全的完成你的线上网课和作业。</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-highlighter"></i></div>
+          <h3>论文润色</h3>
+          <p>提供专业语法修改与逻辑优化，确保论文表达准确、规范。</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <h3>文书精修</h3>
+          <p>优化留学申请文书，突出学术优势与个人特色。</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-language"></i></div>
+          <h3>学术翻译</h3>
+          <p>精准翻译与润色中英文学术文稿，确保专业性与严谨性。</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="stats-counter" aria-label="关键服务数据">
+      <h2 style="color:#0b78d1; margin-bottom: 20px;">值得信赖的学术支持数据</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="count" id="stat-clients">0</span>
+          <span class="label">服务客户</span>
+        </div>
+        <div class="stat-item">
+          <span class="count" id="stat-orders">0</span>
+          <span class="label">累计订单</span>
+        </div>
+        <div class="stat-item">
+          <span class="count" id="stat-rating">0</span>
+          <span class="label">好评率</span>
+        </div>
+        <div class="stat-item">
+          <span class="count" id="stat-passrate">0</span>
+          <span class="label">论文通过率</span>
+        </div>
+        <div class="stat-item">
+          <span class="count" id="stat-tutors">0</span>
+          <span class="label">专业导师团队</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="teacher-board" aria-label="师资介绍">
+      <img src="imagesteachers.jpg" alt="师资团队">
+      <div class="teacher-info">
+        <h3 style="color:#0b78d1;">专业导师团队：学术研究背景深厚，打造卓越代写服务</h3>
+        <p style="color:#475569;text-align:justify;">
+          我们的师资团队由来自全球 TOP 50 顶尖高校（包括常春藤盟校、牛津剑桥等）的学者、博士生及资深研究员组成，100% 拥有硕士或博士学位，涵盖经济学、心理学、管理学、工程学、计算机科学等超过 30 个主流留学领域。我们深知高难度学术论文对专业性、创新性及严谨性的要求，因此所有写作任务均严格匹配拥有对应研究背景和学科专长的导师负责。导师们具备丰富的研究经验与实践背景，能够为学生提供选题指导、论文修改、研究方法辅导以及职业发展建议。
+          <br><br>
+          我们承诺： 每一篇文稿都基于最新的学术研究成果，逻辑推理严密，语言表达地道且专业。我们不仅追求通过，更致力于帮助客户取得高分，真正体现我们团队的专业性与卓越性。
+        </p>
+      </div>
+    </section>
+
+    <section style="margin-top:18px;">
+      <h2 style="color:#0b78d1;text-align:center;">学生评价</h2>
+      <div class="testimonials-grid" style="margin-top:12px;">
+        <div class="testimonial">
+          <p>“服务非常专业，老师给的修改建议很到位，让我的论文顺利通过审核。”</p>
+          <div class="meta">— 英国留学生</div>
+        </div>
+        <div class="testimonial">
+          <p>“Essay 写得很细致，逻辑清晰，导师批改时反馈非常好。”</p>
+          <div class="meta">— 美国留学生</div>
+        </div>
+        <div class="testimonial">
+          <p>“润色服务特别靠谱，性价比很高！”</p>
+          <div class="meta">— 澳大利亚留学生</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" style="margin-top:28px;">
+      <h2 style="color:#0b78d1;text-align:center;">常见问题（精选）</h2>
+      <div class="faq-item">
+        <div class="faq-question">1. 你们的服务是否安全保密？</div>
+        <div class="faq-answer">我们承诺严格保护客户的隐私与资料，所有订单信息均采用加密传输与分级权限管理，未经客户允许不会对外泄露。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">2. 是否保证原创？</div>
+        <div class="faq-answer">所有写作均由专业写手原创完成，润色服务基于客户稿件进行修改。我们建立了多重质检流程，确保作品原创与学术合规。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">3. 不满意怎么办？</div>
+        <div class="faq-answer">我们提供免费修改服务，直至您满意；若最终仍未达到预期，我们承诺按订单条款进行退款或补偿。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">4. 如何下单和付款？</div>
+        <div class="faq-answer">您可以通过在线咨询(右下角浮动按钮)或联系客服QQ/微信，提供您的具体需求（如专业、字数、截止日期等），客服会为您报价并引导您完成安全付款。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">5. 你们能写哪些专业的论文？</div>
+        <div class="faq-answer">我们的导师团队覆盖经济学、心理学、商科、工程学、计算机科学等多个主流留学专业，具体请咨询客服确认。</div>
+      </div>
+      <div style="text-align:center;margin-top:12px;"><a class="btn-primary" href="faq.html">查看完整 FAQ</a></div>
+    </section>
+
+  </div> <a class="floating-chat" href="contact.html"><i class="fa-solid fa-comments"></i>&nbsp; 在线咨询</a>
+
+  <div id="priceModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="priceTitle">
+      <div class="modal-close" title="关闭">✕</div>
+      <h3 id="priceTitle">价格计算器（仅供参考）</h3>
+
+      <label>服务类型</label>
+      <select id="modalService">
+        <option value="writing">论文写作</option>
+        <option value="editing">润色</option>
+        <option value="polish">精修</option>
+        <option value="rewrite">重写</option>
+      </select>
+
+      <label>学术等级</label>
+      <select id="modalAcademic">
+        <option value="highschool">高中</option>
+        <option value="bachelor">本科</option>
+        <option value="master">研究生</option>
+        <option value="phd">博士</option>
+      </select>
+
+      <label>交付时间</label>
+      <select id="modalTime">
+        <option value="12h">12 小时</option>
+        <option value="1d">1 天</option>
+        <option value="2d">2 天</option>
+        <option value="3d">3 天</option>
+        <option value="5d">5 天</option>
+        <option value="7d">7 天</option>
+        <option value="10d">10 天</option>
+      </select>
+
+      <label>字数</label>
+      <select id="modalWords">
+        <option value="500">500</option>
+        <option value="1000">1000</option>
+        <option value="2000">2000</option>
+        <option value="3000">3000</option>
+        <option value="4000">4000</option>
+        <option value="5000">5000</option>
+        <option value="7000">7000</option>
+        <option value="10000">10000</option>
+      </select>
+
+      <div class="price-box">请选择参数以显示估算价格</div>
+      <div class="modal-button-container"><button class="btn-primary" id="modalCalc">计算价格</button></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    © 2018-2025 ThesisAssist 留学生辅导 · All rights reserved · QQ: 2198899715
+  </footer>
+</body>
+</html>
