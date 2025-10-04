@@ -72,7 +72,60 @@
         <div class="faq-question">8. 我能提前收到我的文稿吗？</div>
         <div class="faq-answer">我们严格遵守约定的交付时间。如果导师提前完成，我们会立即通知您。在下单时，您可以根据需要选择不同的交付时间（如 12小时加急、1天、3天等）。</div>
       </div>
+</div> <a class="floating-chat" href="contact.html"><i class="fa-solid fa-comments"></i>&nbsp; 在线咨询</a>
 
+  <div id="priceModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="priceTitle">
+      <div class="modal-close" title="关闭">✕</div>
+      <h3 id="priceTitle">价格计算器</h3>
+
+      <label>服务类型</label>
+      <select id="modalService">
+        <option value="writing">论文写作</option>
+        <option value="editing">润色</option>
+        <option value="polish">精修</option>
+        <option value="rewrite">重写</option>
+      </select>
+
+      <label>学术等级</label>
+      <select id="modalAcademic">
+        <option value="highschool">高中</option>
+        <option value="bachelor">本科</option>
+        <option value="master">研究生</option>
+        <option value="phd">博士</option>
+      </select>
+
+      <label>交付时间</label>
+      <select id="modalTime">
+        <option value="12h">12 小时</option>
+        <option value="1d">1 天</option>
+        <option value="2d">2 天</option>
+        <option value="3d">3 天</option>
+        <option value="5d">5 天</option>
+        <option value="7d">7 天</option>
+        <option value="10d">10 天</option>
+      </select>
+
+      <label>字数</label>
+      <select id="modalWords">
+        <option value="500">500</option>
+        <option value="1000">1000</option>
+        <option value="2000">2000</option>
+        <option value="3000">3000</option>
+        <option value="4000">4000</option>
+        <option value="5000">5000</option>
+        <option value="6000">6000</option>
+        <option value="7000">7000</option>
+        <option value="8000">8000</option>
+        <option value="9000">9000</option>
+        <option value="10000">10000</option>
+        <option value="15000">15000</option>
+      </select>
+
+      <div class="price-box">请选择参数以显示估算价格</div>
+      <div class="modal-button-container"><button class="btn-primary" id="modalCalc">计算价格</button></div>
+    </div>
+  </div>
     </section>
   </div>
 
@@ -80,4 +133,5 @@
     © 2018-2025 ThesisAssist. All rights reserved.
   </footer>
 </body>
+
 </html>
